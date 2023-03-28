@@ -1,3 +1,2 @@
-# template_backend
+# Use this template for creating backend in django
 
-This is a backend services for django rest api specially configured for frontend application running on localhost:3000
