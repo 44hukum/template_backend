@@ -58,9 +58,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     created = models.DateTimeField(auto_now=True) # Time stamp when the user is created
     updated = models.DateTimeField(auto_now_add=True) # Timestamp when the user is updated
 
-    USERNAME_FIELD = 'username'
-    EMAIL_FIELD = 'email'
-    REQUIRED_FIELDS = ['email', ]
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username', ]
 
     objects = UserManager()
 
